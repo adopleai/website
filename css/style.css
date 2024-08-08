@@ -53,18 +53,21 @@ h1,
 h2,
 .fw-bold {
   font-weight: 700 !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 h3,
 h4,
 .fw-semi-bold {
   font-weight: 600 !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 h5,
 h6,
 .fw-medium {
   font-weight: 500 !important;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /*** Button ***/
