@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+    <style>
+       .carousel {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track img {
+  width: 150px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: contain;
+  margin: 0 40px; /* Optional: Add spacing between logos */
+}
+
+/* Pause animation on hover */
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+/* Keyframes for infinite scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="carousel">
+        <div class="carousel-track">
+          <img src="client cursorel/rstand.png" alt="Client Logo 11">
+          <img src="client cursorel\SB_LOGO_RGB-16.png" alt="Client Logo 12">
+          <img src="client cursorel/T_Mobile_1.png" alt="Client Logo 13">
+          <img src="client cursorel/Vodafone-Emblem.png" alt="Client Logo 15">
+          <img src="client cursorel/ATT-Logo.png" alt="Client Logo 2">
+          <img src="client cursorel/crocs.png" alt="Client Logo 3">
+          <img src="client cursorel/JF-logo-848x477.jpg" alt="Client Logo 4">
+          <!-- <img src="client cursorel/JP-Morgan-Chase-Emblem.png" alt="Client Logo 5"> -->
+          <img src="client cursorel/JPM.png" alt="Client Logo 6">
+          <img src="client cursorel/NHS-Logo.png" alt="Client Logo 7">
+          <img src="client cursorel/OIP.png" alt="Client Logo 8">
+          <img src="client cursorel/athmick.png" alt="Client Logo 1">
+          <img src="client cursorel/png-transparent-intercontinental-exchange-interactive-data-corporation-nyse-ice-clearing-creative-ice-miscellaneous-blue-angle.png" alt="Client Logo 9">
+          <img src="client cursorel/RAND.AS_BIG.D.png" alt="Client Logo 10">
+          <img src="client cursorel/rstand.png" alt="Client Logo 11">
+          <img src="client cursorel/Storyboard_Logo_OC-01.svg" alt="Client Logo 12">
+          <img src="client cursorel/T_Mobile_1.png" alt="Client Logo 13">
+          <img src="client cursorel/Vodafone-Emblem.png" alt="Client Logo 15">
+          <img src="client cursorel/ATT-Logo.png" alt="Client Logo 2">
+          <img src="client cursorel/crocs.png" alt="Client Logo 3">
+          <img src="client cursorel/JF-logo-848x477.jpg" alt="Client Logo 4">
+          <!-- <img src="client cursorel/JP-Morgan-Chase-Emblem.png" alt="Client Logo 5"> -->
+          <img src="client cursorel/JPM.png" alt="Client Logo 6">
+          <img src="client cursorel/NHS-Logo.png" alt="Client Logo 7">
+          <img src="client cursorel/OIP.png" alt="Client Logo 8">
+          <img src="client cursorel/athmick.png" alt="Client Logo 1">
+          <img src="client cursorel/png-transparent-intercontinental-exchange-interactive-data-corporation-nyse-ice-clearing-creative-ice-miscellaneous-blue-angle.png" alt="Client Logo 9">
+          <img src="client cursorel/RAND.AS_BIG.D.png" alt="Client Logo 10">
+        </div>
+      </div>
+      <script>
+        window.onload = function() {
+          const track = document.querySelector('.carousel-track');
+          const images = track.innerHTML;
+          track.innerHTML += images; // Duplicate the images for smooth infinite scroll
+        }
+      </script>
+      
+</body>
+</html>
